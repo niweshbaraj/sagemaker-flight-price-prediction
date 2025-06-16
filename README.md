@@ -127,7 +127,7 @@ code .
 ### Environment creation & activation
 
 ```bash
-conda create -n sage-flights-price
+conda create -n sage-flights-price python=3.12
 conda activate sage-flights-price
 ```
 
