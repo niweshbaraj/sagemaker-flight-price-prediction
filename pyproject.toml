@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sagemaker_flight_price_predictiion"
+version = "0.0.1"
+description = "Using SageMaker to build an end-to-end machine learning project to detect prices of flights."
+authors = [
+  { name = "Niwesh Baraj" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.12.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["sagemaker_flight_price_predictiion"]
+include = ["pyproject.toml", "sagemaker_flight_price_predictiion/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["sagemaker_flight_price_predictiion"]
+force-sort-within-sections = true
+
