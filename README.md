@@ -61,8 +61,11 @@ Using SageMaker to build an end-to-end machine learning project to detect prices
 
 ## Creating Project Repo and Environment
 
-ccds    # using cookie-cutter template to create project repo
-    - project_name : SageMaker-Flight-Price-Prediction
+### Setting Up/Creating Project Directory using cookie-cutter template
+
+ccds    # latest version (2)
+
+    - project_name: SageMaker-Flight-Price-Prediction
     - repo_name (sagemaker-flight-price-prediction):
     - module_name (sagemaker-flight-price-prediction):
     - author_name (Your name (or your organization/company/team)): Niwesh Baraj
@@ -115,16 +118,20 @@ ccds    # using cookie-cutter template to create project repo
     1 - Yes
     2 - No
     - Choose from [1/2] (1): 2
-
+    
 ```bash
 cd sagemaker-flight-price-prediction
 code .
-``
+```
+
+### Environment creation & activation
 
 ```bash
 conda create -n sage-flights-price
 conda activate sage-flights-price
 ```
+
+### Initializing git and connecting it with remote repo
 
 ```bash
 git init
